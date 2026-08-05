@@ -1,0 +1,26 @@
+{
+  "name": "castelvento-mobile",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "android": "capacitor run android",
+    "ios": "capacitor run ios",
+    "sync": "capacitor sync",
+    "build:android": "capacitor build android",
+    "build:ios": "capacitor build ios"
+  },
+  "dependencies": {
+    "@capacitor/core": "^5.6.0",
+    "@capacitor/app": "^5.0.6",
+    "@capacitor/haptics": "^5.0.6",
+    "@capacitor/keyboard": "^5.0.7",
+    "@capacitor/status-bar": "^5.0.6",
+    "@capacitor/push-notifications": "^5.0.6",
+    "@capacitor/in-app-purchases": "^5.0.6"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^5.6.0",
+    "@capacitor/android": "^5.6.0",
+    "@capacitor/ios": "^5.6.0"
+  }
+}
