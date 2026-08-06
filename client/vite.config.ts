@@ -5,9 +5,9 @@ import { fileURLToPath } from 'url'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
-// Используем SERVER_PORT из .env (как в .env.example), по умолчанию 3000
-// Также поддерживаем VITE_CLIENT_PORT для порта самого клиента
-const SERVER_PORT = process.env.SERVER_PORT || process.env.VITE_SERVER_PORT || '3000'
+// Используем SERVER_URL из .env (например, http://localhost:3001)
+// Если нет, собираем из SERVER_PORT (по умолчанию 3000)
+const SERVER_URL = process.env.SERVER_URL || `http://localhost:${process.env.SERVER_PORT || '3000'}`
 const CLIENT_PORT = process.env.PORT || process.env.VITE_CLIENT_PORT || '5173'
 
 export default defineConfig({
@@ -23,7 +23,7 @@ export default defineConfig({
     strictPort: false, // Разрешить занять другой порт, если этот занят
     proxy: {
       '/api': {
-        target: `http://localhost:${SERVER_PORT}`,
+        target: SERVER_URL,
         changeOrigin: true,
         secure: false
       }
