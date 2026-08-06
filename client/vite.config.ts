@@ -5,7 +5,8 @@ import { fileURLToPath } from 'url'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
-const SERVER_PORT = process.env.VITE_SERVER_PORT || '3000'
+// Используем SERVER_PORT из .env (как в .env.example), по умолчанию 3000
+const SERVER_PORT = process.env.SERVER_PORT || '3000'
 
 export default defineConfig({
   plugins: [react()],
