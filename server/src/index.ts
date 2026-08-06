@@ -9,7 +9,8 @@ import { config } from './config/index.js';
 dotenv.config();
 
 const app = express();
-const PORT = config.port || 3000;
+const _URL = config.url;
+const _PORT = config.port;
 
 // Middleware
 app.use(helmet());
@@ -24,8 +25,8 @@ app.get('/api/health', (req, res) => {
 });
 
 // Start server
-app.listen(PORT, () => {
-  console.log(`🚀 Server running on http://localhost:${PORT}`);
+app.listen(_PORT, () => {
+  console.log(`🚀 Server running on ${_URL}`);
 });
 
 export default app;

@@ -7,7 +7,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
 // Используем SERVER_URL из .env (например, http://localhost:3001)
 // Если нет, собираем из SERVER_PORT (по умолчанию 3000)
-const SERVER_URL = process.env.SERVER_URL || `http://localhost:${process.env.SERVER_PORT || '3000'}`
+const SERVER_URL = process.env.SERVER_URL || `http://localhost:${process.env.SERVER_PORT || '3001'}`
 const CLIENT_PORT = process.env.PORT || process.env.VITE_CLIENT_PORT || '5173'
 
 export default defineConfig({
