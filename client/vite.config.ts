@@ -5,6 +5,8 @@ import { fileURLToPath } from 'url'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
+const SERVER_PORT = process.env.VITE_SERVER_PORT || '3000'
+
 export default defineConfig({
   plugins: [react()],
   resolve: {
@@ -17,7 +19,7 @@ export default defineConfig({
     port: 5173,
     proxy: {
       '/api': {
-        target: 'http://localhost:3001',
+        target: `http://localhost:${SERVER_PORT}`,
         changeOrigin: true
       }
     }
