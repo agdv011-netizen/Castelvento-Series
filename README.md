@@ -204,34 +204,6 @@ Each of dozens of characters has their own personality, habits, daily schedule, 
 - **Twitter/X**: [@CastelventoGame]
 - **Email**: [Contact Email]
 
----
-
-## 🗺️ Roadmap / Дорожная Карта
-
-### Q1 2025
-- [ ] Разработка ядра движка / Core engine development
-- [ ] Сцена обучения в спальне / Bedroom onboarding sequence
-- [ ] Базовый UI框架 / Basic UI framework
-
-### Q2 2025
-- [ ] Первые 5 локаций / First 5 locations implemented
-- [ ] Система отношений / Character relationship system
-- [ ] Закрытое альфа-тестирование / Closed alpha testing
-
-### Q3 2025
-- [ ] Контент истории (главы 1-3) / Story content (Chapter 1-3)
-- [ ] Мобильная оптимизация / Mobile optimization
-- [ ] Открытая бета / Open beta
-
-### Q4 2025
-- [ ] Полный релиз: **Castelvento 1940s** / Full release
-- [ ] Планирование пост-релизного контента / Post-launch content planning
-- [ ] События сообщества / Community events
-
-### 2026+
-- [ ] Разработка **Castelvento 1950s** / Castelvento 1950s development
-- [ ] DLC расширения / DLC expansions
-- [ ] Порты на консоли / Potential console ports
 
 ---
 
